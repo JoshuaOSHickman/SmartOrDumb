@@ -4,7 +4,7 @@ SmartOrDumb
 An Exploration in Smartphone Conversion
 
 
-==RailsConf 2013
+# RailsConf 2013
 
 So, I like Rails (a little, though, not a whole lot), and my employer is a rails shop, so I found myself visiting the lovely Portland, OR for this year's RubyConf. 
 
@@ -18,7 +18,7 @@ Suffice it to say, other people around the table got involved at this point, tel
 
 Anyhow, I made mention just getting shell access is absurdly difficult, and my time on the iPhone years ago made me believe it'll never be supported. 
 
-==Talking about the weather
+#Talking about the weather
 
 So I went ahead and got a shell for my dumb phone. Something about that Mark Twain quote about people talking about the weather but never doing anything about it. 
 
@@ -28,11 +28,11 @@ I can't type pipes or stars in my phone, so I made those words swap out for the 
 
 To get this working, I recommend throwing it up on heroku, and pointing your SMS callback twilio to <<heroku server>>/sms/run. Works great for me.
 
-== Is it any good?
+# Is it any good?
 
 Yes. 
 
-== Things to know
+# Things to know
 
 Heroku has a read only filesystem. 
 
