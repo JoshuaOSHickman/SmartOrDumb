@@ -1,4 +1,5 @@
 SmartOrDumb::Application.routes.draw do
+  match "sms/run" => 'sms#execute_shell'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
