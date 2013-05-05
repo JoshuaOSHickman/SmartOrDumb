@@ -2,7 +2,7 @@ require 'cgi'
 
 class SmsController < ApplicationController
   def execute_shell
-    command = params['Body']
+    command = params['Body'].dup
     command[0] = command[0].downcase
     {'pipe' => '|', 'star' => '*'}.each do |command, shell|
       command.gsub!(command, shell)
