@@ -2,7 +2,12 @@ require 'cgi'
 
 class SmsController < ApplicationController
   def execute_shell
-    output = `#{params['Body']}`
-    render :inline =>  "<Response><Sms>#{CGI.escapeHTML output}</Sms></Response>", :layout => false, :content_type => "application/xml"
+    command = params['Body']
+    command[0] = command[0].downcase
+    {'pipe' => '|', 'star' => '*'}.each do |command, shell|
+      command.gsub!(command, shell)
+    end
+    output = `#{command}`
+    render :inline =>  "<Response><Sms>#{output.encode(:xml => :text)}</Sms></Response>", :layout => false, :content_type => "application/xml"
   end
 end
