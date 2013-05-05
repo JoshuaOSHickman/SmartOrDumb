@@ -1,5 +1,3 @@
-require 'cgi'
-
 class SmsController < ApplicationController
   def execute_shell
     command = String.new(params['Body'])
