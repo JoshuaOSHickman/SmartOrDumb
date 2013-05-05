@@ -26,7 +26,7 @@ This runs over twilio. I added the twilio number in my smartphone under "Shell",
 
 I can't type pipes or stars in my phone, so I made those words swap out for the characters. 
 
-To get this working, I recommend throwing it up on heroku, and pointing your SMS callback twilio to <<heroku server>>/sms/run. Works great for me.
+To get this working, I recommend throwing it up on heroku, and pointing your SMS callback twilio to heroku-server/sms/run. Works great for me.
 
 ## Is it any good?
 
